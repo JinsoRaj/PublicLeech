@@ -7,8 +7,8 @@ import os
 # the secret configuration specific things
 if bool(os.environ.get("ENV", False)):
     from tobrot.sample_config import Config
-#else:
-    #from tobrot.config import Config
+else:
+    from tobrot.config import Config
 
 
 # TODO: is there a better way?
